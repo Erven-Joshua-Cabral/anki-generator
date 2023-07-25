@@ -1,0 +1,42 @@
+# Each note in the given model will have the following template
+# name: card name
+# qfmt: format of the question card 
+# afmt: format of the answer card 
+Template:
+  name: Card 1
+  qfmt: '<p class="kanji">{{kanji}}</p>'
+  afmt: '{{FrontSide}}<hr id="answer"><p class="kana">{{kana}}</p><p class="meaning">{{meaning}}</p><img src="{{img}}">'
+
+# File name of the source data 
+# Source data should be located inside the data folder
+src_filename: source.csv
+
+# File name of the generated anki deck
+deck_name: my_anki_deck.apkg
+
+# Title of the anki deck
+deck_title: "My Anki Deck"
+
+# Model name
+anki_model_name: "My Anki Model"
+
+# Fields are the elements of an anki note
+Fields:
+ - name: kanji
+ - name: kana
+ - name: meaning
+ - name: img
+
+# CSS formatting for each card generated in this deck
+Style: "
+.card {
+ font-family: arial;
+ font-size: 24px;
+ text-align: center;
+ color: black;
+ background-color: white;
+}
+.kanji {
+ font-size: 48px;
+}
+"
