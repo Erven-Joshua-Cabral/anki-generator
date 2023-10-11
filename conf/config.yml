@@ -5,17 +5,17 @@
 Template:
   name: Card 1
   qfmt: '<p class="kanji">{{kanji}}</p>'
-  afmt: '{{FrontSide}}<hr id="answer"><p class="kana">{{kana}}</p><p class="meaning">{{meaning}}</p><img src="{{img}}">'
+  afmt: '{{FrontSide}}<hr id="answer"><p class="kana">{{kana}}</p><p class="meaning">{{meaning}}</p>'
 
 # File name of the source data 
 # Source data should be located inside the data folder
 src_filename: source.csv
 
 # File name of the generated anki deck
-deck_name: my_anki_deck.apkg
+deck_name: N5_KANJI_FIRST.apkg
 
 # Title of the anki deck
-deck_title: "My Anki Deck"
+deck_title: "N5 Deck Kanji First::N5 Deck_10"
 
 # Model name
 anki_model_name: "My Anki Model"
@@ -25,7 +25,6 @@ Fields:
  - name: kanji
  - name: kana
  - name: meaning
- - name: img
 
 # CSS formatting for each card generated in this deck
 Style: "

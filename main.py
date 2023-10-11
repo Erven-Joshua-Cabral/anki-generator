@@ -48,7 +48,7 @@ def get_source_data(data_source_file, anki_model):
         for row in csv_reader:
             anki_note = genanki.Note(
                 model = anki_model,
-                fields = [row[0], row[1], row[2], row[3]],
+                fields = [row[0], row[1], row[2]],
             )
             anki_notes.append(anki_note)
 
